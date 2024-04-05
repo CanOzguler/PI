@@ -55,7 +55,7 @@ head(data)
 
 
 
-#5
+#6
 median_vaccinations <- data %>%
   group_by(country) %>%
   summarise(median_daily_vaccinations = median(daily_vaccinations, na.rm = TRUE)) %>%
@@ -70,7 +70,7 @@ print(top_countries)
 
 
 
-#8
+#7
 # Filter data for the specific date "1/6/2021" and calculate the sum
 spec_date <- data %>%
   filter(date == "1/6/2021") %>%
